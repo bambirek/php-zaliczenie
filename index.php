@@ -29,6 +29,7 @@ try {
 } catch (AppExcetpion $e) {
     echo "<h1>Wystąpił błąd w aplikacji</h1>";
     echo "<h2>{$e->getMessage()}</h2>";
+    dump($e);
 } catch (Throwable $e) {
     echo "<h1>Wystąpił błąd w aplikacji - skontaktuj się z administratorem.</h1>";
 }
