@@ -4,12 +4,12 @@
         <ul>
             <li> Id: <?php echo (int) $note['id'] ?> </li>
             <li>
-                Tytuł: <?php echo htmlentities($note['title']) ?>
+                Tytuł: <?php echo $note['title'] ?>
     </li>
     <li>
-        Opis: <?php echo htmlentities($note['description']) ?>
+        Opis: <?php echo $note['description'] ?>
     </li>
-    <li>Utworzono: <?php echo htmlentities($note['created']) ?> </li>
+    <li>Utworzono: <?php echo $note['created'] ?> </li>
     <li>
         <a href="/">
             <button>Powrót do listy notatek</button>
