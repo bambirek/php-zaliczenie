@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App;
 
 require_once('./src/Request.php');
-require_once('./src/Controller.php');
+require_once('./src/NoteController.php');
 include_once('./src/utils/debug.php');
 require_once('./config/config.php');
 require_once('./Exception/AppException.php');
@@ -21,9 +21,9 @@ use Throwable;
 
 
 try {
-    Controller::initConfiguration($configuration);
+    AbstractController::initConfiguration($configuration);
     $request = new Request($_GET, $_POST);
-    $controller = new Controller($request);
+    $controller = new NoteController($request);
     $controller->run();
 } catch (AppExcetpion $e) {
     echo "<h1>Wystąpił błąd w aplikacji</h1>";
