@@ -77,8 +77,8 @@ class Database
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
             ]
         );
+        // $this->conn = new PDO('lalalala');
     }
-
     private function validateConfig(array $config): void
     {
         if (empty($config['database'])  || empty($config['user']) || empty($config['host'])) {

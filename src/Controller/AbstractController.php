@@ -2,13 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App;
-
-
-require_once('./config/config.php');
-require_once('./src/Database.php');
+namespace App\Controller;
 
 use App\Request;
+use App\Database;
+use App\View;
 use App\Exception\NotFoundException;
 
 class AbstractController
