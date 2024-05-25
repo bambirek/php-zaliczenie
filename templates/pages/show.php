@@ -17,7 +17,7 @@
     </li>
     <li>
                 <a href="/?action=edit&id=<?php echo (int) $note['id'] ?>">
-                <button>Edytuj</button>
+                <button>Edytuj notatkę</button>
             </a>
             </li>
     </ul>
