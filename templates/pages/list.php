@@ -25,6 +25,9 @@
                         case 'edited':
                             echo "Notatka została zaktualizowana!";
                             break;
+                    case 'deleted':
+                    echo "Notatka została usunięta!";
+                    break;
                     default:
                         echo "Błędny adres URL!";
                         break;
@@ -53,6 +56,7 @@
                             <td><?php echo ($note['title']) ?></td>
                             <td><?php echo $note['created'] ?></td>
                             <td><a href="/?action=show&id=<?php echo (int) $note['id'] ?>">Pokaż</a></td>
+                            <td><a href="/?action=delete&id=<?php echo (int) $note['id'] ?>">Usuń</a></td>
                         </tr>
                         <?php endforeach; ?>
                     </tbody>
