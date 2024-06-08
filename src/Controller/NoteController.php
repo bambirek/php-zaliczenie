@@ -90,4 +90,3 @@ public function getNote(): array
         return $note;
     }
 }
-}
